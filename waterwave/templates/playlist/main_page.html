@@ -1,0 +1,10 @@
+<h1>Welcome to WaterWave Playlist</h1>
+{% if playlist_songs %}
+<ul>
+    {% for eachPlaylist in playlist_songs %}
+    <li>{{ eachPlaylist.songName }} is and is rated {{ eachPlaylist.rating }}</li>
+    <li>{{ eachPlaylist.songName }} is by {{ eachPlaylist.artist }} and is on the album {{ each.Playlist.album }} </li>
+</ul>
+{% else %}}
+<p>No songs available</p>
+{% endif %}
